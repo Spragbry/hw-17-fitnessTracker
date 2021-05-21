@@ -11,7 +11,7 @@ const exerciseSchema = new Schema({
 });
 
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/fitness-tracker-msu',
+    process.env.MONGODB_URI || 'mongodb://localhost/workout',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -19,4 +19,5 @@ mongoose.connect(
       useFindAndModify: false
     }
   );
-  
+
+  //fitness-tracker-msu
