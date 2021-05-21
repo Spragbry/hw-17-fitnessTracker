@@ -9,3 +9,14 @@ const exerciseSchema = new Schema({
     reps: Number,
     sets: Number,
 });
+
+mongoose.connect(
+    process.env.MONGODB_URI || 'mongodb://localhost/fitness-tracker-msu',
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false
+    }
+  );
+  
